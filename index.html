@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arhan Sethi — Software & Machine Learning</title>
+<meta name="description" content="Arhan Sethi. Computer engineering at Virginia Tech. Selected work in software, machine learning, and robotics.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<a class="skip" href="#overview">Skip to selected work</a>
+<nav class="socials" aria-label="Contact and social profiles">
+<a href="https://www.linkedin.com/in/arhan-sethi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4" r="2"/><path d="M11 21V9h4v2c1-3 7-3 7 3v7h-4v-6c0-3-3-3-3 0v6z"/></svg></a>
+<a href="mailto:arhansethi08@gmail.com" aria-label="Email Arhan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="m3 5 9 8 9-8"/></svg></a>
+<a href="https://github.com/ArhanSethi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22v-4c-4 1-4-2-6-3m12 7v-4c0-1-.2-2-1-2 5-.5 7-3 7-6 0-2-1-3-2-4 0-1 0-3-.5-4-2 0-4 1.5-4 1.5a13 13 0 0 0-7 0S5.5 2 3.5 2C3 3 3 5 3 6c-1 1-2 2-2 4 0 3 2 5.5 7 6-.8.5-1 1.5-1 2v4"/></svg></a>
+</nav>
+<header class="hero frame" id="opening">
+
+<h1>Arhan Sethi</h1>
+</header>
+<main>
+<section class="overview frame" id="overview" aria-labelledby="overview-name">
+<div class="overview-intro"><h2 id="overview-name">Arhan Sethi</h2><p>I'm a computer engineering student at Virginia Tech, currently a Researcher at <a href="https://collab.me.vt.edu/" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;text-underline-offset:3px">COLLAB</a>. I'm interested in all things ML and Robotics. While I'm not catching up on ECE assignments, you can find me watching political theory on YouTube or trying (and failing) to bake in my apartment.</p></div>
+<div class="featured"><h2>Featured Works</h2><div class="project-tiles">
+<button class="project-tile" data-project="path-lab"><div class="tile-art path-art" aria-hidden="true"><svg viewBox="0 0 300 300"><g stroke="#b5b5ac" fill="none"><path d="M25 250 55 215 48 162 83 119 66 65M55 215 102 198 124 156 177 165 206 129 260 120M102 198 154 230 210 218 244 245M83 119 128 82 154 31M177 165 185 85 239 47"/></g><path fill="#242420" d="M110 0h30v145h-30zM180 155h30v145h-30z"/><path d="M25 250 79 196 154 163 163 137 233 105 273 40" fill="none" stroke="#a53a25" stroke-width="3"/><circle cx="25" cy="250" r="6"/><circle cx="273" cy="40" r="6"/></svg></div><div class="tile-caption"><span>Path Lab</span><span>↗</span></div></button>
+<button class="project-tile" data-project="visual-search"><div class="tile-art search-art" aria-hidden="true"><div class="search-brackets">[ <span>like this</span> ]</div><span class="tile-query">+ a little different</span><div class="vector-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="tile-caption"><span>Visual Search</span><span>↗</span></div></button>
+<button class="project-tile" data-project="arbiter"><div class="tile-art arbiter-art" aria-hidden="true"><div class="ab-type"><span>A</span><span>B</span></div></div><div class="tile-caption"><span>Arbiter</span><span>↗</span></div></button>
+<button class="project-tile" data-project="orderbook"><div class="tile-art order-art" aria-hidden="true"><svg viewBox="0 0 300 230"><path d="M10 35h35v30h35v30h35v38h35v42" fill="none" stroke="#303a30" stroke-width="3"/><path d="M155 175v-35h35v-34h35V67h35V30h30" fill="none" stroke="#a53a25" stroke-width="3"/><path d="M10 35h35v30h35v30h35v38h35v57H10z" fill="#303a30" opacity=".07"/><path d="M155 190v-50h35v-34h35V67h35V30h30v160z" fill="#a53a25" opacity=".07"/></svg></div><div class="tile-caption"><span>Order Book</span><span>↗</span></div></button>
+</div></div>
+</section>
+<dialog id="project-dialog" aria-label="Project details"><button class="close-project" aria-label="Close project">Close ×</button><div class="dialog-content"></div></dialog>
+<div id="project-content" hidden>
+<article class="project wrap" id="path-lab">
+<div class="project-heading"><h3>Path Lab</h3></div>
+<div class="project-copy"><p>A route from A to B.<br>With a few things in the way.</p><div><p>An interactive comparison of RRT and RRT*: two sampling-based planners that grow a tree through free space. Add an obstacle and watch the route change.</p></div></div>
+<div class="planner" aria-label="Interactive path planning demonstration">
+<div class="demo-toolbar"><div class="segmented" aria-label="Planning algorithm"><button class="selected" data-algorithm="RRT*" aria-pressed="true">RRT*</button><button data-algorithm="RRT" aria-pressed="false">RRT</button></div><div class="planner-actions"><button id="plan-run">Run planner <span aria-hidden="true">↗</span></button><button id="plan-reset" class="quiet">Reset</button><button id="plan-clear" class="quiet">Clear obstacles</button></div></div>
+<canvas id="planner-canvas" width="1000" height="470" aria-label="Map with a start, goal and obstacles. Drag to add an obstacle. The controls below offer keyboard-accessible obstacle editing."></canvas>
+<div class="demo-readout"><span id="plan-status" role="status" aria-live="polite">Ready. Give the algorithm something to work around.</span><div><span>NODES <b id="plan-nodes">1</b></span><span>PATH <b id="plan-length">—</b></span></div></div>
+<div class="demo-help"><span>Drag to add an obstacle. Right-click one to remove it.</span><button id="plan-add" class="text-button">Add obstacle with keyboard +</button></div>
+</div>
+<div class="project-bottom"><details><summary>Under the hood <span>+</span></summary><div class="details-content"><p>The Python extension adds deterministic seeds, clearance-aware collision checks, explicit goal connection, path smoothing, a map editor, and CSV benchmarks. This browser demo ports the planning logic to JavaScript; it isn’t a video.</p><p>The benchmark on the default Python map succeeded in 10/10 seeded trials for both planners. RRT* produced a shorter mean raw path in that experiment; results depend on the map and iteration budget.</p></div></details><a class="download" href="downloads/global-path-planning.zip" download>Source + setup ↗</a></div>
+</article>
+<article class="project wrap" id="visual-search">
+<div class="project-heading"><h3>Visual Search</h3></div>
+<div class="project-copy"><p>“Like this, but…”<br>Now a search query.</p><div><p>A visual search engine that combines an image crop with a text description. OpenCLIP gives both a shared representation; FAISS finds the nearest matches. The interactive diagram below explains the concept; live search runs in the downloadable app.</p></div></div>
+<div class="search-graphic graphic" aria-label="Interactive explanation of image and text embedding fusion">
+
+<div class="fusion-grid"><div><div class="crop-diagram"><div class="crop-frame"><i></i><i></i><i></i><i></i><span>selected<br>region</span></div></div><p>Start with what you see.</p></div><div class="plus" aria-hidden="true">+</div><div><div class="query-type">“a darker<br>jacket”</div><p>Describe what you want.</p></div><div class="equals" aria-hidden="true">=</div><div><svg id="fusion-plot" viewBox="0 0 300 220" role="img" aria-label="Schematic vector space showing the combined query moving between image and text"></svg><p>Search by both.</p></div></div>
+<div class="fusion-controls"><label for="text-weight">Image <span id="fusion-weight">65 / 35</span> Text</label><input id="text-weight" type="range" min="0" max="100" value="35"></div>
+</div>
+<div class="project-bottom"><details><summary>Under the hood <span>+</span></summary><div class="details-content"><p>The extension replaces catalog re-embedding on every request with a reusable FAISS index and a persistent embedding cache. It adds EXIF-aware cropping, weighted image/text queries, and a standalone search interface.</p><p>The diagram above explains weighted embedding fusion. Actual retrieval runs in the downloadable Python app. Its API, crop handling, caching and ranking passed deterministic tests; pretrained CLIP inference wasn’t verified in the build environment because the weights download was blocked.</p></div></details><a class="download" href="downloads/smart-image-search.zip" download>Source + setup ↗</a></div>
+</article>
+<article class="project wrap" id="arbiter">
+<div class="project-heading"><h3>Arbiter</h3></div>
+<div class="project-copy"><p>A second opinion.<br>On the artificial one.</p><div><p>A blind review workbench for comparing model responses, collecting human preferences, and checking how closely an LLM judge agrees. Try an illustrative review below.</p></div></div>
+<div class="review-demo graphic"><p class="review-prompt">What’s the time complexity of binary search, and why?</p><div class="responses"><div><span class="small-label">RESPONSE A</span><p>O(n), because every element in the array must be checked at least once.</p></div><div><span class="small-label">RESPONSE B</span><p>O(log n), because each comparison eliminates roughly half of the remaining search interval.</p></div></div><div class="review-actions"><span>Your call.</span><div><button data-vote="A">A is better</button><button data-vote="tie">Tie</button><button data-vote="B">B is better</button></div></div><p id="review-result" class="review-result" role="status" aria-live="polite">No model names. No reputation to lean on.</p></div>
+<div class="project-bottom"><details><summary>Under the hood <span>+</span></summary><div class="details-content"><p>The extension adds a local dashboard around Arbiter’s existing comparison API: randomized response ordering, saved human votes, atomic case imports, and exact agreement plus Cohen’s kappa. Cost and latency remain separate from quality.</p><p>This small example is illustrative and doesn’t save your vote or call an LLM. The full app stores reviews in SQLite and supports live judging with your provider credentials.</p></div></details><a class="download" href="downloads/arbiter.zip" download>Source + setup ↗</a></div>
+</article>
+<article class="project wrap" id="orderbook">
+<div class="project-heading"><h3>Order Book</h3></div>
+<div class="project-copy"><p>Supply. Demand.<br>A very organized queue.</p><div><p>An event-by-event view of a limit order book, using synthetic data and precomputed C++ snapshots. Replay a session, inspect liquidity at each price, and see exactly how the spread changes.</p></div></div>
+<div class="book-demo graphic"><div class="book-top"><div><h4>DEMO <span id="book-event">001</span></h4></div><div class="book-spread"><span class="small-label">SPREAD</span><b id="book-spread">—</b></div><button id="book-play">Play session ↗</button></div><div class="book-tables"><div><div class="book-side-title">BID <span>QUANTITY</span></div><div id="book-bids"></div></div><div><div class="book-side-title">ASK <span>QUANTITY</span></div><div id="book-asks"></div></div></div><div class="book-timeline"><label for="book-seek">Scrub the session</label><input id="book-seek" type="range" min="0" max="1" value="0"><span id="book-progress">1 / 1</span></div></div>
+<div class="project-bottom"><details><summary>Under the hood <span>+</span></summary><div class="details-content"><p>The extension exports depth snapshots directly from the C++ order book and adds a replay dashboard, symbol filtering, seeking, and depth/spread charts. It also fixes an iterator bug when deleting the last bid level and preserves 64-bit aggregated quantities.</p><p>The full app accepts CSV event streams and rebuilds the C++ engine locally. The upstream execution semantics are retained, so real exchange feeds require a format-specific adapter.</p></div></details><a class="download" href="downloads/orderbook.zip" download>Source + setup ↗</a></div>
+</article>
+</div>
+</main>
+<script src="app.js" defer></script>
+</body></html>
